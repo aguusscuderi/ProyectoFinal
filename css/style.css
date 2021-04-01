@@ -1,0 +1,597 @@
+.frequenceQuestions, .fut-div, .nat-div, .bjj-div {
+  background-position: 0 1000.209px;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 30rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 960px) {
+  .frequenceQuestions, .fut-div, .nat-div, .bjj-div {
+    background-position: 0px 480px;
+    background-size: contain;
+  }
+}
+
+@font-face {
+  font-family: "Advent";
+  src: url(../web-fonts/adventpro_light_macroman/adventpro-light-webfont.woff) format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #F5F1F7;
+}
+
+h1, h2, h3, h4 {
+  font-family: "Hind Madurai", sans-serif;
+  word-spacing: 2px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+h1 {
+  font-family: "Advent";
+  background-color: #6a466e;
+  padding: 1em;
+  border: 1px solid black;
+  margin-bottom: 0 !important;
+}
+
+h5 {
+  font-family: "Advent";
+  word-spacing: 2px;
+  text-align: center;
+  display: inline-block;
+  background-color: #6a466e;
+  padding: 3px;
+  color: white;
+  font-size: 50px;
+}
+
+h3 {
+  font-size: 25px;
+  margin-bottom: 15px;
+}
+
+h4 {
+  font-size: 25px;
+  padding: 10px;
+}
+
+p {
+  font-family: "Advent";
+  font-size: 20px;
+  margin: 5px;
+  padding: 5px;
+}
+
+a {
+  font-family: "Advent" !important;
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 1.3rem;
+  transition: all 0.5s;
+}
+
+/************************************************ HEADER ******************************************/
+header {
+  position: sticky;
+  top: 0;
+  z-index: 15;
+  border-bottom: 1px solid black;
+}
+
+.bannerContainer {
+  height: 150px;
+  width: 300px;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nav-item {
+  padding: 1.3rem;
+}
+
+.nav-link {
+  color: black !important;
+  transition: font-size 0.8s;
+}
+
+.nav-link:hover {
+  color: #420058 !important;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-item input {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  border-bottom: 1.5px solid black;
+  color: black;
+  transition: all 0.5s;
+  width: 12em;
+}
+
+.nav-item input:focus {
+  outline: none;
+  border-bottom: 3px solid #5a405f;
+}
+
+.nav-item input:hover {
+  width: 12.8em;
+}
+
+.active-bg {
+  background-color: #65337b;
+}
+
+/****************************************** FIN DEL HEADER *******************************************/
+/***************************************************** FOOTER *****************************************************/
+footer {
+  border-top: 1px solid black;
+}
+
+.marks__redes-container {
+  background-color: #65337b;
+}
+
+.appLinkButton {
+  font-size: 20px;
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.redesContainer {
+  justify-content: space-evenly;
+}
+
+.redesImg {
+  text-align: center;
+  height: 85px;
+  width: 85px;
+  margin: 25px 20px;
+}
+
+.trademarksContainer b {
+  font-size: 16px;
+  display: block;
+  font-family: "Advent";
+}
+
+.trademarksDiv {
+  display: inline-block;
+  margin: 20px;
+}
+
+.copyrightDiv {
+  background-color: #420058;
+  display: flex;
+  flex-direction: row;
+}
+
+/*este es el "chat" que arme para practicar position*/
+.helper-botContainer {
+  position: fixed;
+  bottom: 0;
+  margin: 10px;
+  right: 0;
+  height: 300px;
+  width: 200px;
+  background-color: #9c90e4;
+  border: 1px solid black;
+}
+@media screen and (max-width: 920px) {
+  .helper-botContainer {
+    display: none;
+  }
+}
+
+.chatInfoContainer {
+  position: absolute;
+  height: 30px;
+  width: 100%;
+  background-color: #4D3EAA;
+  text-align: center;
+  border-bottom: 1px solid black;
+}
+.chatInfoContainer b {
+  position: relative;
+  top: 5px;
+}
+
+.chatContainer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #4D3EAA;
+  overflow: hidden;
+  border: none;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+.writeInput {
+  position: relative;
+  border: none;
+  padding-top: 5px;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+}
+.writeInput:focus {
+  outline: none;
+}
+
+/************************************************* FIN DEL FOOTER *****************************************/
+/***************************************************** MAIN  *****************************************************/
+.img__carousel {
+  height: 100vh;
+}
+
+.p-container {
+  position: absolute;
+  left: 6rem;
+  top: 6rem;
+}
+.p-container p {
+  background-color: #420058;
+  margin: 0;
+  font-weight: bold;
+  color: #DAD8EA;
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-container p {
+    font-size: 3rem;
+  }
+}
+
+.par1 {
+  position: relative;
+  left: 4rem;
+}
+
+.p-container2 {
+  position: absolute;
+  margin: auto;
+  right: 10rem;
+  top: 10rem;
+}
+.p-container2 p {
+  background-color: #616063;
+  margin: 0;
+  font-weight: bold;
+  color: #DAD8EA;
+  font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .p-container2 p {
+    font-size: 3rem;
+  }
+}
+
+.par2 {
+  background-color: #420058 !important;
+  position: relative;
+  left: 4rem;
+}
+
+#sucursales {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 2em;
+  background-color: #65337b;
+}
+
+.localidadesFlexContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.localidades {
+  margin: 20px;
+  padding: 20px 0;
+  text-align: center;
+  position: relative;
+}
+.localidades b {
+  color: #DAD8EA;
+  padding-left: 10px;
+  font-size: 25px;
+  font-family: "Hind Madurai", sans-serif;
+  position: relative;
+  display: block;
+  margin: 10px;
+  top: 0;
+  left: 0;
+}
+
+.values-container {
+  position: relative;
+  text-align: center;
+  border: 2px solid black;
+  background-image: url(../Imagenes/valuesBackground.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+.values-container div {
+  margin: 2em 0;
+}
+.values-container b {
+  font-size: 25px;
+  font-family: "Advent";
+  color: #DAD8EA;
+  display: block;
+}
+.values-container p {
+  color: #DAD8EA;
+  display: inline-block;
+}
+
+/* La idea seria flexibilizar el grid cuando aprendamos las propiedades fr y esas */
+/* hice el "center-grid__div" en display:flex para centrar el div,
+ no se si esta bien usada la herramiento*/
+.coaches {
+  background-image: url(../Imagenes/aside-section.jpg);
+  background-size: cover;
+}
+
+.center-grid__div {
+  padding: 80px;
+}
+
+.grid__container {
+  display: grid;
+  margin: 25px;
+  max-width: 1300px;
+  grid-auto-flow: dense;
+  grid-template-rows: repeat(3, 325px);
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-auto-rows: 325px;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  /* el resto de los grids se ven asi porque hice que se ajusten
+  al contenido con "justify-items" para que la imagen quede
+  bien centrada */
+  justify-items: center;
+}
+
+.grid__item {
+  border-radius: 25%;
+  box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 0.45);
+  padding: 15px;
+  background-color: #420058;
+  text-align: center;
+}
+
+.img__container img {
+  border-radius: 25%;
+}
+.img__container p {
+  color: #DAD8EA;
+}
+
+/*es una imagen de products.html que quedaba enorme, use esas propiedades que si bien todavia
+no aprendimos, era la unica que se me ocurrio para que quede bien*/
+/* productos.html */
+.product_img {
+  cursor: pointer;
+}
+
+.product_img:hover {
+  opacity: 0.8;
+}
+
+.img__container b {
+  display: block;
+  padding: 5px;
+}
+
+.card {
+  background-color: #65337b !important;
+  margin: 6rem;
+}
+.card i {
+  text-align: center;
+  font-size: 80px;
+  margin-top: 16px;
+  color: whitesmoke;
+}
+.card h4 {
+  font-weight: bold;
+}
+.card p {
+  color: whitesmoke;
+}
+
+/************************************** disciplinas.html ************************************************/
+.bjj-div {
+  background-image: url(../Imagenes/polideportivo3.jpg);
+  transition: all 0.5s;
+}
+.bjj-div:hover {
+  opacity: 0.7;
+}
+
+.nat-div {
+  background-image: url(../Imagenes/nat-disc.jpg);
+  transition: all 0.5s;
+}
+.nat-div:hover {
+  opacity: 0.7;
+}
+
+.fut-div {
+  background-image: url(../Imagenes/fut-disc.jpg);
+  transition: all 0.5s;
+}
+.fut-div:hover {
+  opacity: 0.7;
+}
+
+.disc_names {
+  font-size: 70px;
+  color: white;
+  font-family: "Advent";
+  border-bottom: 3px solid #420058;
+}
+
+.disc_info {
+  font-weight: bold;
+  color: white;
+}
+
+.card img {
+  height: 200px;
+  width: 200px;
+}
+
+/*************************************** contacto.html *************************************/
+.banner-container img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.contactInfo {
+  text-align: center;
+  font-size: 18px;
+}
+
+.section-form {
+  display: flex;
+  background-color: #65337b;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 15px auto;
+  border-radius: 10%;
+  border: 1.4px solid black;
+}
+
+.contact-form {
+  text-align: center;
+}
+.contact-form div {
+  margin: 2.4rem;
+  font-family: "Advent";
+  font-size: 1.4rem;
+}
+.contact-form div label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.contact-form div input {
+  background-color: transparent;
+  text-align: center;
+  font-size: 18px;
+  transition: all 0.4s;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.contact-form div input:focus {
+  outline: none;
+}
+
+.checkbox-input input {
+  width: 20px;
+  margin-top: 5px;
+  height: 20px;
+}
+
+.motivo-input select, .sede-input select {
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: transparent;
+  font-size: 16px;
+  border: none;
+}
+.motivo-input select:focus, .sede-input select:focus {
+  outline: none;
+}
+
+.contact-form button {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 4px;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: gray;
+}
+
+.contact-form textarea {
+  resize: none;
+  min-height: 200px;
+  font-size: 17px;
+  width: 100%;
+}
+
+/***************************************************** FIN DEL MAIN *****************************************************/
+/****************************************************** ASIDE ****************************************/
+aside {
+  padding-top: 20px;
+}
+
+.as-h3 {
+  font-size: 45px;
+  color: black;
+  margin: 2rem 0 2rem 0;
+  overflow: hidden;
+  border-bottom: 2px solid blueviolet;
+}
+
+.grid-container {
+  margin-bottom: 6rem;
+}
+
+/* productos.html */
+/* contacto.html */
+aside {
+  padding: 0px;
+}
+
+.frequenceQuestions {
+  background-image: url(../Imagenes/valuesBackground.jpg);
+}
+.frequenceQuestions h3 {
+  margin: 15px;
+  font-family: "Advent";
+}
+.frequenceQuestions div {
+  display: flex;
+  text-align: center;
+  font-family: "Advent";
+  font-size: 18px;
+  font-weight: bold;
+  flex-direction: column;
+}
+.frequenceQuestions div div {
+  margin-bottom: 25px;
+}
+.frequenceQuestions div div i {
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+/************************************ FIN DEL ASIDE *************************************************/
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,71 @@
+
+@font-face {
+    font-family: 'Advent';
+    src: url(../web-fonts/adventpro_light_macroman/adventpro-light-webfont.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #F5F1F7;
+
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Hind Madurai', sans-serif;
+    word-spacing: 2px;
+    text-align: center;
+    color: white;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Advent';
+    background-color: $h-bg;
+    padding: 1em;
+    border: 1px solid black;
+    margin-bottom: 0 !important;
+}
+
+h5 {
+    font-family: 'Advent';
+    word-spacing: 2px;
+    text-align: center;
+    display: inline-block;
+    background-color: $h-bg;
+    padding: 3px;
+    color: white;
+    font-size: 50px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+h4 {
+    font-size: 25px;
+
+    padding: 10px;
+}
+
+
+p {
+    font-family: 'Advent';
+    font-size: 20px;
+    margin: 5px;
+    padding: 5px;
+}
+
+a {
+    font-family: 'Advent' !important;
+    text-decoration: none !important;
+    color: black!important;
+    font-size: 1.3rem;
+    transition: all 0.5s;
+}

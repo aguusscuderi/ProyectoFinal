@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+        <meta name="description" content="Academia Polideportiva, sitio web que expone y comunica nuestra academia, rica en valores y que promueve el bienestar fisico y mental para con nuestros alumnos,
+        con el objetivo de que estos lleven a cabo una vida mas sana y motivada en conseguir los objetivos propuestos a lo largo de sus vidas.">
+        <meta name="keywords" content="Deportes, Club deportivo, academia, fisico, gimnasio, natacion, futbol, jiu jitsu, entrenamiento, clases, sedes, fitCOLEGIALES, CABALLITO, PALERMO, disciplinas,
+        teamwork, actividad fisica"> 
+        <meta name="title" content="Acadeia Polideportiva | Inicio">
+        <meta name="copyright" content="© 2021 AcademiaPolideportiva">
+        <meta name="lenguage" content="Spanish">
+        <meta name="author" content="Agustin Scuderi">
+        <!--OPEN GRAPH-->
+        <meta porperty="og:locality" content="Buenos Aires, Argentina">
+        <meta property="og:type" content="website"> 
+        <meta property="og:descrption" content="Seccion en la que el usuario podra contactarse con nuestro soporte."> 
+        <meta property="og:site_name" content="AcademiaPolideportiva"> 
+        <meta property="og:url" content="file:///C:/Users/Agustin/Desktop/coder%20house/Clase13%20SEO/Desafio13/contacto.html"> 
+        <meta property="og:locale" content="es_ES"> 
+    <!---->    
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="imagenes/banner.ico" type="image/x-icon">
+    <!---->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!--FONT AWESOME-->
+    <script src="https://kit.fontawesome.com/446d31feca.js" crossorigin="anonymous"></script>
+    <title> Contacto </title>
+
+    <!-- BOOTSTRAP-->
+    <link rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" 
+    crossorigin="anonymous">
+
+    <title> Academia Polideportiva | Contacto </title>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar d-flex justify-content-center navbar-expand-lg navbar-light">
+            <div class="bannerContainer">
+                <img src="Imagenes/banner.png" alt="bannerAcademiaPolideportiva" class="banner">
+             </div>
+            <a class="navbar-brand" href="#"> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+              <ul class="navbar-nav align-items-center">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"> Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#sucursales">Sucursales</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="disciplinas.html"> Disciplinas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                <li class="nav-item">
+                    <input class="" type="text" name="" id="">
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+    </header>
+
+
+    <main>
+        <h1> Contacto </h1> 
+        <div class="banner-container">
+            <img src="imagenes/contact-banner.jpg" alt="coverContact">
+        </div>
+        <section class="section-form">
+            <form action="/server/" method="POST" class="contact-form">
+               <div class="name-input">
+                   <label for="name"> Nombre </label>
+                   <input type="text" id="name">
+               </div>
+
+               <div class="surname-input">
+                   <label for="surname"> Apellido </label>
+                    <input type="text" id="surname">
+               </div>
+
+               <div class="dni-input">
+                   <label for="dni"> DNI </label>
+                   <input type="number" id="dni">
+               </div>
+
+               <div class="email-input">
+                <label for="email"> Email </label>
+                <input type="email" id="email">
+            </div>
+
+               <div class="phoneNumber-input">
+                   <label for="number"> Telefono </label>
+                   <input type="number" id="number">
+               </div>
+
+               <div class="checkbox-input">
+                    <label for="checkbox"> ¿Sos socio? </label>
+                    <input type="checkbox" id="checkbox">
+               </div>
+
+                <div class="motivo-input"> 
+                    <label for="contactNeed"> Motivo del contacto</label>
+                    <select name="contactNeed" id="contactNeed">
+                        <option value="a"> Quiero conocer planes y costos </option>
+                        <option value="b"> Quiero realizar una consulta o sugerencia </option>
+                        <option value="c"> Quiero realizar un reclamo </option>
+                    </select>
+               </div>
+
+               <div class="sede-input">
+                    <label for="contactNeed"> Selecciona la sede </label>
+                    <select name="contactNeed" id="contactNeed">
+                        <option value="pa"> Palermo </option>
+                        <option value="ca"> Caballito </option>
+                        <option value="co"> Colegiales </option>
+                    </select>
+                </div>
+
+                <div class="area-input">
+                    <label for="area"> Deja tu comentario </label>
+                    <textarea name="" 
+                    id="area" cols="30" rows="10">
+                    </textarea>
+                </div>
+
+                <button type="submit">Enviar</button>
+    
+           </form>  
+
+        </section>
+
+        <section id="sucursales">
+                <h2> Nuestras sucursales </h2>
+                    <div class="localidadesFlexContainer">
+                        <div class="localidades">
+                            <b> Colegiales </b>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19689.88303005516!2d-58.4459665810591!3d-34.56987992744182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1613088330276!5m2!1ses-419!2sar" 
+                            width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="localidades">
+                            <b> Palermo </b>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19687.801584251512!2d-58.43458541679159!3d-34.578668690538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1613088401981!5m2!1ses-419!2sar"
+                            width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                        <div class="localidades"> 
+                            <b> Caballito </b>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19682.14567991614!2d-58.43987332055301!3d-34.60254049011858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1613088500102!5m2!1ses-419!2sar"
+                            width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>   
+            </section>
+
+    </main>
+
+
+
+
+
+    <aside>
+        <section class="frequenceQuestions">
+            <h3> PREGUNTAS FRECUENTES </h3>
+            <div class="container fq-div">
+                <div>
+                    <span> Quiero inscribirme en la academia </span>
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div>
+                    <span> Quiero inscribirme en la academia </span>
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div>
+                    <span> ¿Donde puedo hacer el apto medico? </span>
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div>
+                    <span> ¿Que sedes tienen pileta? </span>
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div>
+                    <span> ¿Como hago para enviar mi CV? </span>
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+                <div>
+                    <span> ¿Que sedes tienen estacionamiento? </span>
+                    <i class="fas fa-arrow-down"></i>
+                </div>
+            </div>    
+        </section>
+    </aside>
+
+
+    <footer>
+        <section class="marks__redes-container">
+            <h4> SEGUINOS EN NUESTRAS REDES </h4>
+            <div class="redesContainer d-flex flex-wrap justify-content-evenly text-center flex-row">
+                <div>
+                    <a href="https://www.instragram.com" target="_blank"> <img src="Imagenes/instagram.png" alt="instagramLogo" class="redesImg"> </a>
+                </div>
+                <div class="whatsappContainer">  
+                    <a href="" target="_blank"> <img src="Imagenes/wpp.png" alt="whatsappLogo" class="redesImg"> </a> <!-- le di tamaño porque era enorme-->
+                </div>     
+                <div>    
+                    <a href="https://www.facebook.com" target="_blank"> <img src="Imagenes/facebook.png" alt="facebookLogo" class="redesImg"> </a>
+                </div> 
+                <div class="trademarksContainer">
+                    <b> Estas marcas nos dan su apoyo! </b>
+                    <div class="trademarksDiv">
+                        <img src="Imagenes/gatorade.png" alt="gatoradeLogo">
+                    </div>
+                    <div class="trademarksDiv">
+                        <img src="Imagenes/arena.png" alt="arenaLogo">
+                    </div>
+                    <div class="trademarksDiv">
+                        <img src="Imagenes/medicus.png" alt="medicusLogo">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="last-footer-section">
+            <div class="copyrightDiv row">
+                <div class="bannerImg col-sm-12 col-md-6 col-lg-4"> 
+                    <img src="Imagenes/banner.png" class="img-fluid" alt="bannerImg">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-8">
+                    <p>
+                    En AcademiaPolideportiva cuidamos tu salud, por eso te recordamos que tu apto médico es indispensable al momento de iniciar una actividad física (leyes nº 139 y 12329)
+                    Copyright (c) 2021 ACADEMIAPOLIDEPORTIVA Todos los derechos reservados.
+                    </p> 
+                </div>     
+            </div>                   
+        </section>
+           <!-- Cree una especie de chat para practicar el "position" se que probablemente no sea asi
+            solo es una forma que se me ocurrio para practicar y demostrar en el desafio jajaja-->
+            <div class="helper-botContainer">
+                <div class="chatInfoContainer">
+                    <b>
+                        Academia Polideportiva
+                    </b>
+                </div>
+                <div class="chatContainer">
+                    <input type="text" class="writeInput">
+                </div>
+            </div>   
+    </footer>
+
+     <!-- Option 2: Separate Popper and Bootstrap JS --> 
+     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script> 
+</body>
+</html>
