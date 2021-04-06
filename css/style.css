@@ -236,16 +236,23 @@ footer {
 
 /************************************************* FIN DEL FOOTER *****************************************/
 /***************************************************** MAIN  *****************************************************/
-.img__carousel {
-  height: 100vh;
-}
-
 .p-container {
-  position: absolute;
   left: 6rem;
   top: 6rem;
 }
-.p-container p {
+.p-container b {
+  background-color: black;
+  margin: 0;
+  font-weight: bold;
+  color: #DAD8EA;
+  font-size: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .p-container b {
+    font-size: 2rem;
+  }
+}
+.p-container span {
   background-color: #420058;
   margin: 0;
   font-weight: bold;
@@ -253,13 +260,12 @@ footer {
   font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .p-container p {
+  .p-container span {
     font-size: 3rem;
   }
 }
 
 .par1 {
-  position: relative;
   left: 4rem;
 }
 
@@ -284,7 +290,6 @@ footer {
 
 .par2 {
   background-color: #420058 !important;
-  position: relative;
   left: 4rem;
 }
 
@@ -388,6 +393,10 @@ footer {
 /*es una imagen de products.html que quedaba enorme, use esas propiedades que si bien todavia
 no aprendimos, era la unica que se me ocurrio para que quede bien*/
 /* productos.html */
+.carousel-item img {
+  height: 700px;
+}
+
 .product_img {
   cursor: pointer;
 }
