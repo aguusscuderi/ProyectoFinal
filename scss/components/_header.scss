@@ -1,12 +1,11 @@
 /************************************************ HEADER ******************************************/
 
-header {
+.header {
     position: sticky;
     top: 0;
     z-index: 15;
     border-bottom: 1px solid black;
 }
-
 
 .bannerContainer {
     height: 150px;

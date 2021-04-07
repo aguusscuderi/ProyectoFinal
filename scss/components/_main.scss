@@ -285,6 +285,37 @@
     
 }
 
+.gim-div {
+    background-image: url(../Imagenes/gim-disc.jpg);
+    @extend %roll-img-effect;
+    background-position: 0 1480.209px !important;
+    transition: all 0.5s;
+    &:hover {
+        opacity: .7
+    }
+    
+}
+
+.bask-div {
+    background-image: url(../Imagenes/bask-disc.jpg);
+    @extend %roll-img-effect;
+    background-position: 0 1450.209px !important;
+    transition: all 0.5s;
+    &:hover {
+        opacity: .7
+    }
+}
+
+.hok-div {
+    background-image: url(../Imagenes/hok-disc.jpg);
+    @extend %roll-img-effect;
+    background-position: 0 1500.209px !important;
+    transition: all 0.5s;
+    &:hover {
+        opacity: .7
+    }
+}
+
 .disc_names {
     font-size: 70px;
     color: white;

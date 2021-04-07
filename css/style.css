@@ -1,4 +1,4 @@
-.frequenceQuestions, .fut-div, .nat-div, .bjj-div {
+.frequenceQuestions, .hok-div, .bask-div, .gim-div, .fut-div, .nat-div, .bjj-div {
   background-position: 0 1000.209px;
   background-attachment: fixed;
   background-size: cover;
@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 @media screen and (max-width: 960px) {
-  .frequenceQuestions, .fut-div, .nat-div, .bjj-div {
+  .frequenceQuestions, .hok-div, .bask-div, .gim-div, .fut-div, .nat-div, .bjj-div {
     background-position: 0px 480px;
     background-size: contain;
   }
@@ -28,7 +28,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Hind Madurai", sans-serif;
+  font-family: "Advent";
   word-spacing: 2px;
   text-align: center;
   color: white;
@@ -36,7 +36,6 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-family: "Advent";
   background-color: #6a466e;
   padding: 1em;
   border: 1px solid black;
@@ -44,7 +43,6 @@ h1 {
 }
 
 h5 {
-  font-family: "Advent";
   word-spacing: 2px;
   text-align: center;
   display: inline-block;
@@ -80,7 +78,7 @@ a {
 }
 
 /************************************************ HEADER ******************************************/
-header {
+.header {
   position: sticky;
   top: 0;
   z-index: 15;
@@ -449,6 +447,33 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
   transition: all 0.5s;
 }
 .fut-div:hover {
+  opacity: 0.7;
+}
+
+.gim-div {
+  background-image: url(../Imagenes/gim-disc.jpg);
+  background-position: 0 1480.209px !important;
+  transition: all 0.5s;
+}
+.gim-div:hover {
+  opacity: 0.7;
+}
+
+.bask-div {
+  background-image: url(../Imagenes/bask-disc.jpg);
+  background-position: 0 1450.209px !important;
+  transition: all 0.5s;
+}
+.bask-div:hover {
+  opacity: 0.7;
+}
+
+.hok-div {
+  background-image: url(../Imagenes/hok-disc.jpg);
+  background-position: 0 1500.209px !important;
+  transition: all 0.5s;
+}
+.hok-div:hover {
   opacity: 0.7;
 }
 
