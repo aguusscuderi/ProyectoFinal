@@ -1,4 +1,4 @@
-.frequenceQuestions, .hok-div, .bask-div, .gim-div, .fut-div, .nat-div, .bjj-div {
+.hok-div, .bask-div, .gim-div, .fut-div, .nat-div, .bjj-div {
   background-position: 0 1000.209px;
   background-attachment: fixed;
   background-size: cover;
@@ -6,7 +6,7 @@
   overflow: hidden;
 }
 @media screen and (max-width: 960px) {
-  .frequenceQuestions, .hok-div, .bask-div, .gim-div, .fut-div, .nat-div, .bjj-div {
+  .hok-div, .bask-div, .gim-div, .fut-div, .nat-div, .bjj-div {
     background-position: 0px 480px;
     background-size: contain;
   }
@@ -234,11 +234,11 @@ footer {
 
 /************************************************* FIN DEL FOOTER *****************************************/
 /***************************************************** MAIN  *****************************************************/
-.p-container {
+.caption-container {
   left: 6rem;
   top: 6rem;
 }
-.p-container b {
+.caption-container b {
   background-color: black;
   margin: 0;
   font-weight: bold;
@@ -246,11 +246,11 @@ footer {
   font-size: 1rem;
 }
 @media screen and (min-width: 768px) {
-  .p-container b {
+  .caption-container b {
     font-size: 2rem;
   }
 }
-.p-container span {
+.caption-container span {
   background-color: #420058;
   margin: 0;
   font-weight: bold;
@@ -258,22 +258,16 @@ footer {
   font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .p-container span {
+  .caption-container span {
     font-size: 3rem;
   }
 }
 
-.par1 {
-  left: 4rem;
-}
-
-.p-container2 {
-  position: absolute;
-  margin: auto;
+.caption-container2 {
   right: 10rem;
   top: 10rem;
 }
-.p-container2 p {
+.caption-container2 span {
   background-color: #616063;
   margin: 0;
   font-weight: bold;
@@ -281,21 +275,27 @@ footer {
   font-size: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .p-container2 p {
+  .caption-container2 span {
     font-size: 3rem;
   }
 }
-
-.par2 {
-  background-color: #420058 !important;
-  left: 4rem;
+.caption-container2 b {
+  background-color: #420058;
+  color: #DAD8EA;
+  padding: 5px;
+  font-weight: bold;
+}
+@media screen and (min-width: 768px) {
+  .caption-container2 b {
+    font-size: 2rem;
+  }
 }
 
 #sucursales {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 2em;
-  background-color: #65337b;
+  background-image: url(../Imagenes/sucursales.jpeg);
 }
 
 .localidadesFlexContainer {
@@ -495,9 +495,8 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
 }
 
 /*************************************** contacto.html *************************************/
-.banner-container img {
-  width: 100%;
-  object-fit: cover;
+.banner-container {
+  text-align: center;
 }
 
 .contactInfo {
@@ -506,14 +505,9 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
 }
 
 .section-form {
-  display: flex;
-  background-color: #65337b;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
+  background-color: #F1F1F1;
+  width: 100%;
   margin: 15px auto;
-  border-radius: 10%;
-  border: 1.4px solid black;
 }
 
 .contact-form {
@@ -529,16 +523,11 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
   margin-bottom: 5px;
   font-weight: bold;
 }
-.contact-form div input {
-  background-color: transparent;
-  text-align: center;
-  font-size: 18px;
-  transition: all 0.4s;
-  border: none;
-  border-bottom: 2px solid black;
-}
 .contact-form div input:focus {
-  outline: none;
+  background: #8b8b8b;
+  background: linear-gradient(0deg, rgba(207, 207, 207, 0.7259278711) 0%, #F1F1F1 49%);
+  text-align: center !important;
+  transition: all 0.4s;
 }
 
 .checkbox-input input {
@@ -579,6 +568,28 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
   width: 100%;
 }
 
+.frequenceQuestions h3 {
+  margin: 3rem;
+  color: black;
+  font-family: "Advent";
+}
+.frequenceQuestions div {
+  display: flex;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-family: "Advent";
+  font-size: 18px;
+  font-weight: bold;
+  flex-direction: column;
+}
+.frequenceQuestions div div {
+  margin-bottom: 25px;
+}
+.frequenceQuestions div div i {
+  margin-top: 2px;
+  cursor: pointer;
+}
+
 /***************************************************** FIN DEL MAIN *****************************************************/
 /****************************************************** ASIDE ****************************************/
 aside {
@@ -598,34 +609,6 @@ aside {
 }
 
 /* productos.html */
-/* contacto.html */
-aside {
-  padding: 0px;
-}
-
-.frequenceQuestions {
-  background-image: url(../Imagenes/valuesBackground.jpg);
-}
-.frequenceQuestions h3 {
-  margin: 15px;
-  font-family: "Advent";
-}
-.frequenceQuestions div {
-  display: flex;
-  text-align: center;
-  font-family: "Advent";
-  font-size: 18px;
-  font-weight: bold;
-  flex-direction: column;
-}
-.frequenceQuestions div div {
-  margin-bottom: 25px;
-}
-.frequenceQuestions div div i {
-  margin-top: 2px;
-  cursor: pointer;
-}
-
 /************************************ FIN DEL ASIDE *************************************************/
 
 /*# sourceMappingURL=style.css.map */

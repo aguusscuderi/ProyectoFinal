@@ -1,19 +1,5 @@
 /***************************************************** MAIN  *****************************************************/
-//  .carousel {
-//      @media screen and (min-width:320px) {
-//          height: 200px;      
-//      }
-//  }
-//  .img__carousel{
-//      height: 100vh;
-//      @media screen and (min-width:320px) {
-//          object-fit: contain;
-//          width: 100%;    
-//      }
-//   }
- 
-
- .p-container {
+ .caption-container {
      left: 6rem;
      top: 6rem;
         b {
@@ -40,16 +26,12 @@
         }
  }
 
- .par1 {
-    left: 4rem;
- }
+ 
 
- .p-container2 {
-    position: absolute;
-    margin: auto;
+ .caption-container2 {
     right: 10rem;
     top: 10rem;
-       p {
+       span {
            background-color: rgb(97, 96, 99);
            margin: 0;
            font-weight: bold;
@@ -59,13 +41,19 @@
                font-size: 3rem;
            }
        }
+
+       b {
+        background-color: nth($main-violet, 1);  
+        color: $p-white;
+        padding: 5px;
+        font-weight: bold;  
+        @media screen and (min-width:768px)  {
+            font-size: 2rem;
+    
+        }   
+       }
  }
 
- .par2 {
-     background-color: nth($main-violet, 1) !important;
-     left: 4rem;
- }
- 
 
 
  
@@ -73,7 +61,7 @@
      border-top: 1px solid black;
      border-bottom: 1px solid black;
      padding: 2em;
-     background-color:nth($main-violet, 2);
+     background-image: url(../Imagenes/sucursales.jpeg)
  }
  
  .localidadesFlexContainer {
@@ -344,11 +332,7 @@
  
  /*************************************** contacto.html *************************************/
  .banner-container {
-
-     img {
-         width: 100%;
-         object-fit: cover;
-     }
+     text-align: center;
  }
  
  .contactInfo {
@@ -358,14 +342,9 @@
  
  
  .section-form {
-     display: flex;
-     background-color: nth($main-violet, 2);
-     flex-direction: column;
-     align-items: center;
-     width: 80%;
+     background-color: #F1F1F1;
+     width: 100%;
      margin: 15px auto;
-     border-radius: 10%;
-     border: 1.4px solid black;
  }
  
  .contact-form {
@@ -382,18 +361,11 @@
             font-weight: bold;
         }
 
-        input {
-            background-color: transparent;
-            text-align: center;
-            font-size: 18px;    
+        input:focus {         
+            background: rgb(139,139,139);
+            background: linear-gradient(0deg, rgba(207,207,207,0.7259278711484594) 0%, #F1F1F1 49%);
+            text-align: center !important; 
             transition: all 0.4s;     
-            border: none;       
-            border-bottom: 2px solid black;
-            &:focus{
-                outline: none;
-            
-            }
-
         }
         
         
@@ -458,6 +430,37 @@
      width: 100%;
  }
  
+
+ .frequenceQuestions {
+
+    h3 {
+        margin: 3rem;
+        color: black;
+        font-family: 'Advent';
+    }
+
+    div {
+        display: flex;
+        margin-bottom: 3rem;
+        text-align: center;
+        font-family: 'Advent';
+        font-size: 18px;
+        font-weight: bold;
+        flex-direction: column;
+
+        div {
+            margin-bottom: 25px;
+
+            i {
+                margin-top: 2px;
+            
+                cursor: pointer;
+            }
+            
+        }
+        
+    }
+}
  
  
  

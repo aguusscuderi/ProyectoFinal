@@ -23,42 +23,6 @@ aside {
 
 
 
-/* contacto.html */
-
-aside {
-    padding: 0px;
-}
-
-.frequenceQuestions {
-    background-image: url(../Imagenes/valuesBackground.jpg);
-    @extend %roll-img-effect;
-
-    h3 {
-        margin: 15px;
-        font-family: 'Advent';
-    }
-
-    div {
-        display: flex;
-        text-align: center;
-        font-family: 'Advent';
-        font-size: 18px;
-        font-weight: bold;
-        flex-direction: column;
-
-        div {
-            margin-bottom: 25px;
-
-            i {
-                margin-top: 2px;
-            
-                cursor: pointer;
-            }
-            
-        }
-        
-    }
-}
 
 
 

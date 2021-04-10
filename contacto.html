@@ -84,68 +84,100 @@
     <main>
         <h1> Contacto </h1> 
         <div class="banner-container">
-            <img src="imagenes/contact-banner.jpg" alt="coverContact">
+            <img src="Imagenes/banner.png" alt="coverContact" class="img-fluid">
         </div>
+        
         <section class="section-form">
-            <form action="/server/" method="POST" class="contact-form">
-               <div class="name-input">
-                   <label for="name"> Nombre </label>
-                   <input type="text" id="name">
-               </div>
+            <div class="row w-100">
+                <div class="col-sm-12 col-md-8 col-lg-8">
+                    <form action="/server/" method="POST" class="contact-form">
+                            <div class="name-input">
+                                <label for="name"> Nombre: </label>
+                                <input type="text" id="name">
+                            </div>
 
-               <div class="surname-input">
-                   <label for="surname"> Apellido </label>
-                    <input type="text" id="surname">
-               </div>
+                            <div class="surname-input">
+                                <label for="surname"> Apellido: </label>
+                                    <input type="text" id="surname">
+                            </div>
 
-               <div class="dni-input">
-                   <label for="dni"> DNI </label>
-                   <input type="number" id="dni">
-               </div>
+                            <div class="dni-input">
+                                <label for="dni"> DNI: </label>
+                                <input type="number" id="dni">
+                            </div>
 
-               <div class="email-input">
-                <label for="email"> Email </label>
-                <input type="email" id="email">
-            </div>
+                            <div class="email-input">
+                                <label for="email"> Email: </label>
+                                <input type="email" id="email">
+                            </div>
 
-               <div class="phoneNumber-input">
-                   <label for="number"> Telefono </label>
-                   <input type="number" id="number">
-               </div>
+                            <div class="phoneNumber-input">
+                                <label for="number"> Telefono: </label>
+                                <input type="number" id="number">
+                            </div>
 
-               <div class="checkbox-input">
-                    <label for="checkbox"> ¿Sos socio? </label>
-                    <input type="checkbox" id="checkbox">
-               </div>
+                            <div class="checkbox-input">
+                                    <label for="checkbox"> ¿Sos socio?: </label>
+                                    <input type="checkbox" id="checkbox">
+                            </div>
 
-                <div class="motivo-input"> 
-                    <label for="contactNeed"> Motivo del contacto</label>
-                    <select name="contactNeed" id="contactNeed">
-                        <option value="a"> Quiero conocer planes y costos </option>
-                        <option value="b"> Quiero realizar una consulta o sugerencia </option>
-                        <option value="c"> Quiero realizar un reclamo </option>
-                    </select>
-               </div>
+                            <div class="motivo-input"> 
+                                <label for="contactNeed"> Motivo del contacto:</label>
+                                <select name="contactNeed" id="contactNeed">
+                                    <option value="a"> Quiero conocer planes y costos </option>
+                                    <option value="b"> Quiero realizar una consulta o sugerencia </option>
+                                    <option value="c"> Quiero realizar un reclamo </option>
+                                </select>
+                            </div>
 
-               <div class="sede-input">
-                    <label for="contactNeed"> Selecciona la sede </label>
-                    <select name="contactNeed" id="contactNeed">
-                        <option value="pa"> Palermo </option>
-                        <option value="ca"> Caballito </option>
-                        <option value="co"> Colegiales </option>
-                    </select>
+                            <div class="sede-input">
+                                <label for="contactNeed"> Selecciona la sede: </label>
+                                <select name="contactNeed" id="contactNeed">
+                                    <option value="pa"> Palermo </option>
+                                    <option value="ca"> Caballito </option>
+                                    <option value="co"> Colegiales </option>
+                                </select>
+                            </div>
+
+                            <div class="area-input">
+                                <label for="area"> Deja tu comentario: </label>
+                                <textarea name="" 
+                                id="area" cols="30" rows="10">
+                                </textarea>
+                            </div>
+
+                            <button type="submit">Enviar</button>       
+                    </form> 
+                </div> 
+
+                <div class="col-sm-12 col-md-8 col-lg-4 text-center frequenceQuestions">
+                    <h3> PREGUNTAS FRECUENTES </h3>
+                        <div>
+                            <span> Quiero inscribirme en la academia </span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div>
+                            <span> Quiero inscribirme en la academia </span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div>
+                            <span> ¿Donde puedo hacer el apto medico? </span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div>
+                            <span> ¿Que sedes tienen pileta? </span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div>
+                            <span> ¿Como hago para enviar mi CV? </span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                        <div>
+                            <span> ¿Que sedes tienen estacionamiento? </span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
                 </div>
-
-                <div class="area-input">
-                    <label for="area"> Deja tu comentario </label>
-                    <textarea name="" 
-                    id="area" cols="30" rows="10">
-                    </textarea>
-                </div>
-
-                <button type="submit">Enviar</button>
-    
-           </form>  
+            </div> 
 
         </section>
 
@@ -171,42 +203,6 @@
             </section>
 
     </main>
-
-
-
-
-
-    <aside>
-        <section class="frequenceQuestions">
-            <h3> PREGUNTAS FRECUENTES </h3>
-            <div class="container fq-div">
-                <div>
-                    <span> Quiero inscribirme en la academia </span>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                <div>
-                    <span> Quiero inscribirme en la academia </span>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                <div>
-                    <span> ¿Donde puedo hacer el apto medico? </span>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                <div>
-                    <span> ¿Que sedes tienen pileta? </span>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                <div>
-                    <span> ¿Como hago para enviar mi CV? </span>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-                <div>
-                    <span> ¿Que sedes tienen estacionamiento? </span>
-                    <i class="fas fa-arrow-down"></i>
-                </div>
-            </div>    
-        </section>
-    </aside>
 
 
     <footer>
