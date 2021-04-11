@@ -102,6 +102,7 @@
 
  
  #sucursales {
+     transition: all 1s;
      border-top: 1px solid black;
      border-bottom: 1px solid black;
      padding: 2em;
@@ -169,7 +170,6 @@
  .coaches {
     background-image: url(../Imagenes/aside-section.jpg);
     background-size: cover;
-
  }
 
  .center-grid__div {
@@ -191,16 +191,23 @@
      al contenido con "justify-items" para que la imagen quede
      bien centrada */
     justify-items: center;
+    @media screen and (max-width:480px) {
+       width: 100%;
+       justify-items: inherit;
+    }
  
  }
  
- .grid__item {
- 
+ .grid__item { 
      border-radius: 25%;
      box-shadow: 0 30px 50px -12px rgb(0 0 0 / 45%);
      padding: 15px;
      background-color: nth($main-violet, 1);
      text-align: center;
+     @media screen and (max-width:480px) {
+         height: 280px;
+         width: 200px;
+     }
  
  }
  
@@ -221,12 +228,25 @@
  no aprendimos, era la unica que se me ocurrio para que quede bien*/
  
  
- /* productos.html */
+ /************************************ productos.html ******************************/
  
  .products-carousel {
-     img {
-         height: 700px;
-     }
+    height: 70vh;
+    width: 100%;
+    overflow: hidden;
+
+    @media screen and (max-width:480px) {
+            width: 100%;
+            height: 250px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                overflow: hidden;
+                object-fit: cover;
+            }
+
+        } 
  }
  
  .product_img {
@@ -337,11 +357,17 @@
     color: white;
     font-family: 'Advent';
     border-bottom: 3px solid nth($main-violet, 1);
+    @media screen and (max-width: 480px) {
+        font-size: 40px;
+    }
 }
 
 .disc_info {
     font-weight: bold;
     color: white;
+    @media screen and (max-width: 480px) {
+        font-size: 20px;
+    }
 }
 
 .card {

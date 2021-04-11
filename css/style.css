@@ -2,13 +2,21 @@
   background-position: 0 1000.209px;
   background-attachment: fixed;
   background-size: cover;
+  margin: auto;
   height: 30rem;
   overflow: hidden;
 }
 @media screen and (max-width: 960px) {
   .hok-div, .bask-div, .gim-div, .fut-div, .nat-div, .bjj-div {
-    background-position: 0px 480px;
-    background-size: contain;
+    background-attachment: inherit;
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 480px) {
+  .hok-div, .bask-div, .gim-div, .fut-div, .nat-div, .bjj-div {
+    background-attachment: inherit;
+    background-position: 0;
+    background-size: cover;
   }
 }
 
@@ -51,11 +59,17 @@ h1 {
 h5 {
   word-spacing: 2px;
   text-align: center;
-  display: inline-block;
+  border-bottom: 1px solid black;
   background-color: #564877;
   padding: 3px;
   color: white;
   font-size: 50px;
+}
+@media screen and (max-width: 480px) {
+  h5 {
+    height: 85px;
+    font-size: 25px !important;
+  }
 }
 
 h3 {
@@ -348,6 +362,7 @@ footer {
 }
 
 #sucursales {
+  transition: all 1s;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   padding: 2em;
@@ -428,6 +443,12 @@ footer {
   bien centrada */
   justify-items: center;
 }
+@media screen and (max-width: 480px) {
+  .grid__container {
+    width: 100%;
+    justify-items: inherit;
+  }
+}
 
 .grid__item {
   border-radius: 25%;
@@ -435,6 +456,12 @@ footer {
   padding: 15px;
   background-color: #442d7c;
   text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .grid__item {
+    height: 280px;
+    width: 200px;
+  }
 }
 
 .img__container img {
@@ -446,9 +473,23 @@ footer {
 
 /*es una imagen de products.html que quedaba enorme, use esas propiedades que si bien todavia
 no aprendimos, era la unica que se me ocurrio para que quede bien*/
-/* productos.html */
-.products-carousel img {
-  height: 700px;
+/************************************ productos.html ******************************/
+.products-carousel {
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+}
+@media screen and (max-width: 480px) {
+  .products-carousel {
+    width: 100%;
+    height: 250px;
+  }
+  .products-carousel img {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+  }
 }
 
 .product_img {
@@ -539,10 +580,20 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
   font-family: "Advent";
   border-bottom: 3px solid #442d7c;
 }
+@media screen and (max-width: 480px) {
+  .disc_names {
+    font-size: 40px;
+  }
+}
 
 .disc_info {
   font-weight: bold;
   color: white;
+}
+@media screen and (max-width: 480px) {
+  .disc_info {
+    font-size: 20px;
+  }
 }
 
 .card img {

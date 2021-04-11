@@ -38,11 +38,15 @@ h1 {
 h5 {
     word-spacing: 2px;
     text-align: center;
-    display: inline-block;
+    border-bottom: 1px solid black;
     background-color: $h-bg;
     padding: 3px;
     color: white;
     font-size: 50px;
+    @media screen and (max-width:480px) {
+        height: 85px;
+        font-size: 25px !important;
+    }
 }
 
 h3 {
