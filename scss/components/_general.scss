@@ -29,6 +29,10 @@ h1 {
     padding: 1em;
     border: 1px solid black;
     margin-bottom: 0 !important;
+    @media screen and (max-width:480px) {
+        height: 85px;
+        font-size: 25px !important;
+    }
 }
 
 h5 {
