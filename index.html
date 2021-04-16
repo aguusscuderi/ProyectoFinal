@@ -9,12 +9,12 @@
         con el objetivo de que estos lleven a cabo una vida mas sana y motivada en conseguir los objetivos propuestos a lo largo de sus vidas.">
         <meta name="keywords" content="Deportes, Club deportivo, academia, fisico, gimnasio, natacion, futbol, jiu jitsu, entrenamiento, clases, sedes, fitCOLEGIALES, CABALLITO, PALERMO, disciplinas,
         teamwork, actividad fisica"> 
-        <meta name="title" content="Acadeia Polideportiva | Inicio">
+        <meta name="title" content="Academia Polideportiva | Inicio">
         <meta name="copyright" content="© 2021 AcademiaPolideportiva">
         <meta name="lenguage" content="Spanish">
         <meta name="author" content="Agustin Scuderi">     
         <!--OPEN GRAPH-->
-        <meta porperty="locality" content="Buenos Aires, Argentina">
+        <meta property="locality" content="Buenos Aires, Argentina">
         <meta property="og:type" content="website"> 
         <meta property="og:descrption" content="Inicio de la web donde se encuentra la informacion principal del sitio."> 
         <meta property="og:site_name" content="AcademiaPolideportiva"> 
@@ -51,6 +51,11 @@
 </head>
 <body>
         <header>
+            <div class="covid-19 text-center">
+               <a href="#covid-19"> 
+                   <p> CONOCE NUESTRO PROTOCOLO CONTRA EL <span>COVID-19</span> </p>
+                </a>
+            </div>
             <nav class="navbar d-flex justify-content-center navbar-expand-lg navbar-light bg-white">
                 <div class="bannerContainer">
                     <img src="Imagenes/banner.png" alt="bannerAcademiaPolideportiva" class="banner">
@@ -153,8 +158,8 @@
             </section>  
 
             <section class="coaches">
-                <h5>NUESTROS PROFESORES</h5>
                 <div class="center-grid__div container text-center"> 
+                    <h5>NUESTROS PROFESORES</h5>
                     <div class="grid__container">
                         <div class="grid__item"> 
                             <div class="img__container">
@@ -179,6 +184,30 @@
                          <div class="grid__item">9</div>
                     </div>
                </div> 
+            </section>
+
+            <section id="covid-19">
+                <div class="row">
+                    <h6 class="w-100"> MEDIDAS COVID-19 </h6>
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img src="Imagenes/covid1.jpg" class="w-100" alt="">
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img src="Imagenes/covid2.jpg" class="w-100" alt="">
+                    </div>               
+           
+                <div class="w-100 d-md-block"></div>
+               
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img src="Imagenes/covid3.jpg" class="w-100" alt="">
+                    </div>
+
+                    <div class="col-sm-12 col-md-6 col-lg-6">
+                        <img src="Imagenes/covid4.jpg" class="w-100" alt="">
+                    </div>  
+                </div>
+
             </section>
 
             <section id="sucursales">
@@ -208,9 +237,9 @@
         <aside>         
             <section class="opContainer container">
                 <h3 class="as-h3"> NUESTROS ALUMNOS </h3>   
-                <div class="grid-container row text-center">
+                <div class="grid-container row text-center opinions">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <img src="Imagenes/fotocarnet.jpg" alt="alumno"> 
+                        <img src="Imagenes/fotocarnet.jpg" class="op_img" alt="alumno"> 
                     </div>
                     <div class="col-sm-12 col-md-8 col-lh-8">
                         <b class="nombreAlumnos">
@@ -227,7 +256,7 @@
                 </div>
                 <div class="grid-container row text-center">
                     <div class="col-sm-12 col-md-4 col-lg-4">
-                        <img src="Imagenes/fotocarnet.jpg" alt="alumno"> 
+                        <img src="Imagenes/fotocarnet.jpg" class="op_img" alt="alumno"> 
                     </div>
                     <div class="col-sm-12 col-md-8 col-lh-8">
                         <b class="nombreAlumnos">
@@ -259,7 +288,7 @@
                         <a href="https://www.facebook.com" target="_blank"> <img src="Imagenes/facebook.png" alt="facebookLogo" class="redesImg"> </a>
                     </div> 
                     <div class="trademarksContainer">
-                        <b> Estas marcas nos dan su apoyo! </b>
+                        <span> Estas marcas nos dan su apoyo! </span>
                         <div class="trademarksDiv">
                             <img src="Imagenes/gatorade.png" alt="gatoradeLogo">
                         </div>
@@ -286,19 +315,6 @@
                     </div>     
                 </div>                   
             </section>
-
-               <!-- Cree una especie de chat para practicar el "position" se que probablemente no sea asi
-                solo es una forma que se me ocurrio para practicar y demostrar en el desafio jajaja-->
-                <div class="helper-botContainer">
-                    <div class="chatInfoContainer">
-                        <b>
-                            Academia Polideportiva
-                        </b>
-                    </div>
-                    <div class="chatContainer">
-                        <input type="text" class="writeInput">
-                    </div>
-                </div>   
         </footer>
 
      <!-- Option 2: Separate Popper and Bootstrap JS --> 

@@ -47,7 +47,7 @@ h1 {
   background-color: #564877;
   padding: 1em;
   border: 1px solid black;
-  margin-bottom: 0 !important;
+  margin-bottom: 0;
 }
 @media screen and (max-width: 480px) {
   h1 {
@@ -59,8 +59,7 @@ h1 {
 h5 {
   word-spacing: 2px;
   text-align: center;
-  border-bottom: 1px solid black;
-  background-color: #564877;
+  text-shadow: 2px 2px 3px black;
   padding: 3px;
   color: white;
   font-size: 50px;
@@ -69,6 +68,21 @@ h5 {
   h5 {
     height: 85px;
     font-size: 25px !important;
+  }
+}
+
+h6 {
+  text-align: center;
+  text-shadow: 2px 2px 3px black;
+  text-decoration: underline;
+  padding: 3px;
+  color: white;
+  font-size: 50px;
+}
+@media screen and (max-width: 480px) {
+  h6 {
+    height: 85px;
+    font-size: 25px;
   }
 }
 
@@ -91,8 +105,6 @@ p {
 
 a {
   font-family: "Advent" !important;
-  text-decoration: none !important;
-  color: black !important;
   font-size: 1.3rem;
   transition: all 0.5s;
 }
@@ -103,6 +115,19 @@ a {
   top: 0;
   z-index: 15;
   border-bottom: 1px solid black;
+}
+
+.covid-19 {
+  background-color: red;
+}
+.covid-19 a:link {
+  color: white;
+}
+.covid-19 p {
+  padding: 7px;
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .bannerContainer {
@@ -118,6 +143,11 @@ a {
 
 .nav-item {
   padding: 1.3rem;
+}
+@media screen and (max-width: 480px) {
+  .nav-item {
+    padding: 8px;
+  }
 }
 
 .nav-link {
@@ -164,26 +194,20 @@ footer {
   background-color: #5c4d94;
 }
 
-.appLinkButton {
-  font-size: 20px;
-  text-decoration: underline;
-  text-align: center;
-  padding-top: 20px;
-}
-
 .redesContainer {
   justify-content: space-evenly;
 }
 
 .redesImg {
   text-align: center;
-  height: 85px;
-  width: 85px;
-  margin: 25px 20px;
+  height: 45px;
+  width: 45px;
+  margin: 15px 10px;
 }
 
-.trademarksContainer b {
+.trademarksContainer span {
   font-size: 16px;
+  color: white;
   display: block;
   font-family: "Advent";
 }
@@ -197,59 +221,6 @@ footer {
   background-color: #442d7c;
   display: flex;
   flex-direction: row;
-}
-
-/*este es el "chat" que arme para practicar position*/
-.helper-botContainer {
-  position: fixed;
-  bottom: 0;
-  margin: 10px;
-  right: 0;
-  height: 300px;
-  width: 200px;
-  background-color: #9c90e4;
-  border: 1px solid black;
-}
-@media screen and (max-width: 920px) {
-  .helper-botContainer {
-    display: none;
-  }
-}
-
-.chatInfoContainer {
-  position: absolute;
-  height: 30px;
-  width: 100%;
-  background-color: #4D3EAA;
-  text-align: center;
-  border-bottom: 1px solid black;
-}
-.chatInfoContainer b {
-  position: relative;
-  top: 5px;
-}
-
-.chatContainer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 30px;
-  background-color: #4D3EAA;
-  overflow: hidden;
-  border: none;
-  border-top: 1px solid black;
-  text-align: center;
-}
-
-.writeInput {
-  position: relative;
-  border: none;
-  padding-top: 5px;
-  border-bottom: 1px solid black;
-  background-color: transparent;
-}
-.writeInput:focus {
-  outline: none;
 }
 
 /************************************************* FIN DEL FOOTER *****************************************/
@@ -295,7 +266,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .caption-container b {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 .caption-container span {
@@ -312,7 +283,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .caption-container span {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 
@@ -340,7 +311,7 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .caption-container2 span {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 }
 .caption-container2 b {
@@ -357,8 +328,20 @@ footer {
 }
 @media screen and (max-width: 480px) {
   .caption-container2 b {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
+}
+
+#covid-19 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid #442d7c;
+}
+#covid-19 div {
+  background-color: #37326B;
+  padding: 15px;
+  width: 100%;
 }
 
 #sucursales {
@@ -469,6 +452,12 @@ footer {
 }
 .img__container p {
   color: #DAD8EA;
+}
+
+.op_img {
+  border-radius: 50%;
+  border: 1px solid black;
+  margin-bottom: 5px;
 }
 
 /*es una imagen de products.html que quedaba enorme, use esas propiedades que si bien todavia

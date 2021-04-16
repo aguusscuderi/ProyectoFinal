@@ -36,7 +36,7 @@
             }
             
             @media screen and (max-width: 480px) {
-                font-size: .8rem;
+                font-size: 1rem;
             }
         }
         span {
@@ -51,7 +51,7 @@
             }
 
             @media screen and (max-width: 480px) {
-                font-size: .8rem;
+                font-size: 1rem;
             }
         }
  }
@@ -76,7 +76,7 @@
            }
 
            @media screen and (max-width: 480px) {
-            font-size: .8rem;
+            font-size: 1rem;
         }
        }
 
@@ -92,13 +92,24 @@
         }  
         
         @media screen and (max-width: 480px) {
-            font-size: .8rem;
+            font-size: 1rem;
         }
 
        }
  }
 
 
+#covid-19 {
+     display: flex;
+     justify-content: center;
+     padding: 5px;
+    border: 2px solid nth($main-violet, 1);;
+     div {
+         background-color:  #37326B;
+         padding: 15px;
+         width: 100%;
+         }
+     }
 
  
  #sucursales {
@@ -214,7 +225,6 @@
  .img__container  {
      
     img {
- 
      border-radius: 25%;
         }
 
@@ -222,6 +232,12 @@
         color: $p-white;
     }    
 }
+
+.op_img {
+        border-radius: 50%;
+        border: 1px solid black;
+        margin-bottom: 5px;
+    }
  
  
  /*es una imagen de products.html que quedaba enorme, use esas propiedades que si bien todavia
