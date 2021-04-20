@@ -421,9 +421,6 @@ footer {
   grid-auto-rows: 325px;
   column-gap: 1.5rem;
   row-gap: 1.5rem;
-  /* el resto de los grids se ven asi porque hice que se ajusten
-  al contenido con "justify-items" para que la imagen quede
-  bien centrada */
   justify-items: center;
 }
 @media screen and (max-width: 480px) {
@@ -481,6 +478,45 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
   }
 }
 
+.products__container {
+  display: grid;
+  margin: 25px;
+  max-width: 1300px;
+  grid-auto-flow: dense;
+  grid-template-rows: repeat(3, 400px);
+  grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+  grid-auto-rows: 325px;
+  column-gap: 1.5rem;
+  row-gap: 1.5rem;
+  justify-items: center;
+}
+@media screen and (max-width: 480px) {
+  .products__container {
+    width: 100%;
+    justify-items: inherit;
+  }
+}
+
+.products__item {
+  box-shadow: 0 15px 20px 0px rgba(0, 0, 0, 0.45);
+  padding: 15px;
+  text-align: center;
+  transition: all 0.2s;
+}
+.products__item:hover {
+  transform: scale(1.04);
+}
+@media screen and (max-width: 480px) {
+  .products__item {
+    height: 280px;
+    width: 200px;
+  }
+}
+
+.img__products img {
+  border-bottom: 1px solid black;
+}
+
 .product_img {
   cursor: pointer;
 }
@@ -489,7 +525,7 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
   opacity: 0.8;
 }
 
-.img__container b {
+.img__products b {
   display: block;
   padding: 5px;
 }
@@ -512,6 +548,25 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
 }
 
 /************************************** disciplinas.html ************************************************/
+.navbar-disciplinas {
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid black;
+  background-color: #442d7c;
+}
+@media screen and (max-width: 480px) {
+  .navbar-disciplinas {
+    justify-content: center;
+  }
+}
+.navbar-disciplinas li {
+  margin: 7px;
+}
+.navbar-disciplinas li a {
+  text-decoration: underline;
+  color: #DAD8EA;
+}
+
 .bjj-div {
   background-image: url(../Imagenes/polideportivo3.jpg);
   transition: all 0.5s;
@@ -538,7 +593,6 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
 
 .gim-div {
   background-image: url(../Imagenes/gim-disc.jpg);
-  background-position: 0 1480.209px !important;
   transition: all 0.5s;
 }
 .gim-div:hover {
@@ -547,7 +601,6 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
 
 .bask-div {
   background-image: url(../Imagenes/bask-disc.jpg);
-  background-position: 0 1450.209px !important;
   transition: all 0.5s;
 }
 .bask-div:hover {
@@ -556,7 +609,6 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
 
 .hok-div {
   background-image: url(../Imagenes/hok-disc.jpg);
-  background-position: 0 1500.209px !important;
   transition: all 0.5s;
 }
 .hok-div:hover {
@@ -603,7 +655,7 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
 .section-form {
   background-color: #F1F1F1;
   width: 100%;
-  margin: 15px auto;
+  margin-top: 15px auto;
 }
 
 .contact-form {

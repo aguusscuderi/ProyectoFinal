@@ -7,5 +7,17 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aguusscuderi/ProyectoFinal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/aguusscuderi/ProyectoFinal/issues"
+  },
+  "homepage": "https://github.com/aguusscuderi/ProyectoFinal#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7"
+  }
 }
