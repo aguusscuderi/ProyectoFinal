@@ -47,7 +47,7 @@ h1 {
   background-color: #564877;
   padding: 1em;
   border: 1px solid black;
-  margin-bottom: 0;
+  margin-bottom: auto !important;
 }
 @media screen and (max-width: 480px) {
   h1 {
@@ -336,10 +336,10 @@ footer {
   display: flex;
   justify-content: center;
   padding: 5px;
-  border: 2px solid #442d7c;
+  background-image: url(../Imagenes/image_fondo.png);
+  background-size: cover;
 }
 #covid-19 div {
-  background-color: #37326B;
   padding: 15px;
   width: 100%;
 }
@@ -399,9 +399,6 @@ footer {
   display: inline-block;
 }
 
-/* La idea seria flexibilizar el grid cuando aprendamos las propiedades fr y esas */
-/* hice el "center-grid__div" en display:flex para centrar el div,
- no se si esta bien usada la herramiento*/
 .coaches {
   background-image: url(../Imagenes/aside-section.jpg);
   background-size: cover;
@@ -416,7 +413,7 @@ footer {
   margin: 25px;
   max-width: 1300px;
   grid-auto-flow: dense;
-  grid-template-rows: repeat(3, 325px);
+  grid-template-rows: repeat(3, 460px);
   grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
   grid-auto-rows: 325px;
   column-gap: 1.5rem;
@@ -427,28 +424,35 @@ footer {
   .grid__container {
     width: 100%;
     justify-items: inherit;
+    grid-template-rows: none;
   }
 }
 
 .grid__item {
   border-radius: 25%;
-  box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 0.45);
-  padding: 15px;
+  border: 1px solid black;
+  overflow: hidden;
   background-color: #442d7c;
   text-align: center;
 }
 @media screen and (max-width: 480px) {
   .grid__item {
-    height: 280px;
+    overflow: hidden;
+    height: 325px;
     width: 200px;
   }
 }
+.grid__item p {
+  color: #DAD8EA;
+}
 
+.img__container {
+  overflow: hidden;
+}
 .img__container img {
   border-radius: 25%;
-}
-.img__container p {
-  color: #DAD8EA;
+  width: 100%;
+  object-fit: contain;
 }
 
 .op_img {
@@ -457,8 +461,6 @@ footer {
   margin-bottom: 5px;
 }
 
-/*es una imagen de products.html que quedaba enorme, use esas propiedades que si bien todavia
-no aprendimos, era la unica que se me ocurrio para que quede bien*/
 /************************************ productos.html ******************************/
 .products-carousel {
   height: 70vh;
@@ -497,6 +499,10 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
   }
 }
 
+.productsSection {
+  background-color: #FEF7F5;
+}
+
 .products__item {
   box-shadow: 0 15px 20px 0px rgba(0, 0, 0, 0.45);
   padding: 15px;
@@ -530,29 +536,48 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
   padding: 5px;
 }
 
-.card {
+.services_cards {
+  background-image: url(../Imagenes/image_fondo.png);
+}
+
+.p_cards {
   background-color: #5c4d94 !important;
   margin: 6rem;
 }
-.card i {
+.p_cards i {
   text-align: center;
   font-size: 80px;
   margin-top: 16px;
   color: whitesmoke;
 }
-.card h4 {
+@media screen and (max-width: 480px) {
+  .p_cards i {
+    font-size: 45px;
+  }
+}
+.p_cards h4 {
   font-weight: bold;
 }
-.card p {
+@media screen and (max-width: 480px) {
+  .p_cards h4 {
+    font-size: 20px;
+  }
+}
+.p_cards p {
   color: whitesmoke;
+}
+@media screen and (max-width: 480px) {
+  .p_cards p {
+    font-size: 20px;
+  }
 }
 
 /************************************** disciplinas.html ************************************************/
 .navbar-disciplinas {
   position: sticky;
   top: 0;
-  border-bottom: 1px solid black;
-  background-color: #442d7c;
+  border: 1px solid black;
+  background-color: #564877;
 }
 @media screen and (max-width: 480px) {
   .navbar-disciplinas {
@@ -716,34 +741,26 @@ no aprendimos, era la unica que se me ocurrio para que quede bien*/
   width: 100%;
 }
 
-.frequenceQuestions h3 {
+.frequence_questions h3 {
   margin: 3rem;
+  border-bottom: 2px solid #5c4d94;
   color: black;
   font-family: "Advent";
 }
-.frequenceQuestions div {
-  display: flex;
-  margin-bottom: 3rem;
-  text-align: center;
-  font-family: "Advent";
-  font-size: 18px;
-  font-weight: bold;
-  flex-direction: column;
+.frequence_questions .mb-0 button {
+  color: black;
+  font-size: 1.3rem;
+  text-decoration: none;
 }
-.frequenceQuestions div div {
-  margin-bottom: 25px;
-}
-.frequenceQuestions div div i {
-  margin-top: 2px;
-  cursor: pointer;
+
+@media screen and (max-width: 480px) {
+  .card_body-contact p {
+    font-size: 20px;
+  }
 }
 
 /***************************************************** FIN DEL MAIN *****************************************************/
 /****************************************************** ASIDE ****************************************/
-aside {
-  padding-top: 20px;
-}
-
 .as-h3 {
   font-size: 45px;
   color: black;

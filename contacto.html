@@ -18,7 +18,7 @@
         <meta property="og:type" content="website"> 
         <meta property="og:descrption" content="Seccion en la que el usuario podra contactarse con nuestro soporte."> 
         <meta property="og:site_name" content="AcademiaPolideportiva"> 
-        <meta property="og:url" content="file:///C:/Users/Agustin/Desktop/coder%20house/Clase13%20SEO/Desafio13/contacto.html"> 
+        <meta property="og:url" content="https://academiapolideportiva.000webhostapp.com/contacto.html"> 
         <meta property="og:locale" content="es_ES"> 
     <!---->    
 
@@ -147,35 +147,92 @@
                     </form> 
                 </div> 
 
-                <div class="col-sm-12 col-md-8 col-lg-4 text-center frequenceQuestions">
-                    <h3> PREGUNTAS FRECUENTES </h3>
-                        <div>
-                            <span> Quiero inscribirme en la academia </span>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                        <div>
-                            <span> Quiero inscribirme en la academia </span>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                        <div>
-                            <span> ¿Donde puedo hacer el apto medico? </span>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                        <div>
-                            <span> ¿Que sedes tienen pileta? </span>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                        <div>
-                            <span> ¿Como hago para enviar mi CV? </span>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                        <div>
-                            <span> ¿Que sedes tienen estacionamiento? </span>
-                            <i class="fas fa-arrow-down"></i>
-                        </div>
-                </div>
-            </div> 
+                <div class="col-sm-12 col-md-8 col-lg-4 text-center frequence_questions">
+                    <h3 class=""> PREGUNTAS FRECUENTES </h3>
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
 
+                              <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-center" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    Quiero inscribirme en la academia
+                                  </button>
+                                </h2>
+                              </div>                        
+                              <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div class="card-body card_body-contact">
+                                  <p>
+                                    Mirá todos nuestros planes o llená el formulario indicando tu sede de preferencia.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    ¿Donde puedo hacer el apto medico?
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <p>
+                                      El apto medico es si o si necesario para realizar deporte, podes hacerlo en cualquiera de nuestras sucursales consultando en
+                                      la recepcion para acercarte a uno de nuestros medicos.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                              <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                  <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    ¿Que sedes tienen pileta?
+                                  </button>
+                                </h2>
+                              </div>
+                              <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div class="card-body">
+                                  <p> Actualmente, contamos con pileta en las sedes de Caballito y Palermo.</p>
+                                </div>
+                              </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿Como hago para enviar mi CV?
+                                    </button>
+                                  </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                    <p>Envianos tu CV a trabajo@academiapolideportiva.com.ar</p>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <div class="card">
+                                <div class="card-header" id="headingThree">
+                                  <h2 class="mb-0">
+                                    <button class="btn btn-link btn-block text-center collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿Que sedes tienen estacionamiento?
+                                    </button>
+                                  </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                  <div class="card-body">
+                                    <p>Todas nuestras sedes cuentan con un amplio estacionamiento, asi que no tenes excusa para no venir, a menos que haya paro y no tengas auto </p>
+                                  </div>
+                                </div>
+                              </div>
+
+                        </div>
+                    </div>
         </section>
 
         <section id="sucursales">
@@ -197,7 +254,7 @@
                             width="400" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>   
-            </section>
+        </section>
 
     </main>
 
@@ -216,7 +273,7 @@
                     <a href="https://www.facebook.com" target="_blank"> <img src="Imagenes/facebook.png" alt="facebookLogo" class="redesImg"> </a>
                 </div> 
                 <div class="trademarksContainer">
-                    <b> Estas marcas nos dan su apoyo! </b>
+                    <span> Estas marcas nos dan su apoyo! </span>>
                     <div class="trademarksDiv">
                         <img src="Imagenes/gatorade.png" alt="gatoradeLogo">
                     </div>
