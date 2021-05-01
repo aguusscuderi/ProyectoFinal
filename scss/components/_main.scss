@@ -173,33 +173,16 @@
 
  .coaches {
     background-image: url(../Imagenes/aside-section.jpg);
-    background-size: cover;
+    background-size: contain;
  }
 
  .center-grid__div {
-    padding: 80px;
+    padding: 30px;
+    .row {
+        margin: 20px;
+    }
  }
 
- 
- .grid__container {
-    display: grid;
-    margin: 25px;
-    max-width: 1300px;
-    grid-auto-flow: dense;
-    grid-template-rows: repeat(3, 460px);
-    grid-template-columns: repeat(auto-fill,minmax(275px,1fr));
-    grid-auto-rows: 325px;
-    column-gap: 1.5rem;
-    row-gap: 1.5rem; 
-    justify-items: center;
-    @media screen and (max-width:480px) {
-       width: 100%;
-       justify-items: inherit;
-       grid-template-rows: none;
-    }
- 
- }
- 
  .grid__item { 
      border-radius: 25%;
      border: 1px solid black;
@@ -207,9 +190,7 @@
      background-color: nth($main-violet, 1);
      text-align: center;
      @media screen and (max-width:480px) {
-         overflow: hidden;
-         height: 325px;
-         width: 200px;
+         margin-bottom: 5px;
      }
  
      p {
@@ -238,13 +219,11 @@
  /************************************ productos.html ******************************/
  
  .products-carousel {
-    height: 70vh;
+    height: 60vh;
     width: 100%;
     overflow: hidden;
-
     @media screen and (max-width:480px) {
-            width: 100%;
-            height: 250px;
+        height: 220px !important;
 
             img {
                 width: 100%;
@@ -257,7 +236,7 @@
 
         @media screen and (max-width:1024px) {
             width: 100%;
-            height: 600px;
+            height: 350px;
         }     
  }
 
@@ -300,8 +279,22 @@
  
  }
 
+ .prod_filters {
+     margin: 15px;
+     border-right: 1px solid black;
+     @media screen and (max-width:1024px) {
+        border-bottom: 1px solid black;
+        border-right: none;
+     }
+     b {
+         border-bottom: 2px solid nth($main-violet , 2 );
+     }
+ }
+
  .services_cards {
      background-image: url(../Imagenes/image_fondo.png);
+     background-size: cover;
+     background-attachment: 0 600.209px;
  }
  
  .p_cards {
@@ -339,9 +332,7 @@
  /************************************** disciplinas.html ************************************************/
 
 .navbar-disciplinas {
-    position: sticky;
-    top: 0;
-    border: 1px solid black;
+    border-bottom: 1px solid black;
     background-color: #564877;
     @media screen and (max-width: 480px) {
         justify-content: center;
