@@ -510,8 +510,20 @@ footer {
     border-right: none;
   }
 }
-.prod_filters b {
+.prod_filters span {
   border-bottom: 2px solid #5c4d94;
+  font-weight: none;
+  font-size: 30px;
+}
+
+.li_products {
+  font-style: inherit;
+}
+.li_products a {
+  font-size: 16px;
+}
+.li_products a:hover {
+  font-size: normal;
 }
 
 .services_cards {
@@ -648,6 +660,9 @@ footer {
 /*************************************** contacto.html *************************************/
 .banner-container {
   text-align: center;
+}
+.banner-container img {
+  padding: 20px;
 }
 
 .contactInfo {

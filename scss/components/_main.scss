@@ -286,8 +286,23 @@
         border-bottom: 1px solid black;
         border-right: none;
      }
-     b {
+
+     span {
          border-bottom: 2px solid nth($main-violet , 2 );
+         font-weight: none;
+         font-size: 30px;
+     }
+
+ }
+
+ .li_products {
+     font-style: inherit;
+     a {
+         font-size: 16px;
+     }
+
+     a:hover {
+         font-size: normal;
      }
  }
 
@@ -443,6 +458,9 @@
  /*************************************** contacto.html *************************************/
  .banner-container {
      text-align: center;
+     img {
+         padding: 20px;
+     }
  }
  
  .contactInfo {
